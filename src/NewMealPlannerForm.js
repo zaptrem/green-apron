@@ -22,6 +22,7 @@ function MealPlannerForm(props) {
   const mood = useFormInput(""); // Preferences
   const budget = useFormInput(0); // Budget
   const priority = useFormInput("price"); // Price or distance
+
   // Form submission handler
   function handleSubmit(e) {
     e.preventDefault();
@@ -41,8 +42,8 @@ function MealPlannerForm(props) {
     fontSize: "16px",
     maxWidth: "600px",
     margin: "20px auto",
-    padding: "20px",
-    backgroundColor: "#f0f0f0",
+    backgroundColor: "#FFFFFF",
+    color: "#000000",
     border: "1px solid #ccc",
     display: "flex",
     flexDirection: "column",
@@ -59,6 +60,8 @@ function MealPlannerForm(props) {
 
   const labelStyle = {
     fontWeight: "bold",
+    backgroundColor: "#FFFFFF"
+
   };
 
   const inputStyle = {
@@ -77,7 +80,7 @@ function MealPlannerForm(props) {
     border: "none",
     borderRadius: "10px",
     backgroundColor: "#00a0d2",
-    color: "#fff",
+    color: "#000000",
     cursor: "pointer",
   };
 

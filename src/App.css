@@ -1,5 +1,6 @@
-.App {
+.app {
   text-align: center;
+  background-color: #236E00;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -9,7 +10,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 50vh;
   display: flex;
   flex-direction: column;
@@ -19,15 +19,84 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  display: flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-header em {
+  color: #339C02;
+
+}
+
+.wavy-line-break {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background-color: #FFFFFF;
+}
+
+.wavy-line-break svg {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+
+}
+
+.wavy-line-break .shape-fill {
+  fill: #236E00;
+}
+
+#break2 {
+  background-color: #236E00;
+}
+
+#break2 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 44px;
+}
+
+#break2 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
+
+.benefitsGrid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  color: grey;
+  background-color: white;
+}
+
+.benefitsGridItem {
+  margin: 35px;
+  background-color: white;
+}
+
+.meal-planner-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  /* change color of form to regular backround */
+  background-color: white;
+
+}
+
+.App-link {
+  color: #61dafb;
 }
