@@ -4,26 +4,27 @@ import MealPlannerForm from './NewMealPlannerForm';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <header className="App-header">
-        <MealPlannerForm/>
-        <p>
-          Edit <code>src/App.js</code> and save to reload. Hello I have made changes
-        </p>
-        <p>
-          Other text
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1 className="App-title">Green Appron</h1>
+        <img src="public/images/Fresh-green-apple-on-transparent-background-PNG.png" alt="logo" />
+        <em style={{ textAlign: "center" }}> "Meals that fit to you"</em>
+        <li>Affordable</li>
+        <li>Convenient</li>
+        <li>Sustainable</li>
       </header>
+      
+
+    
+
+      <div className='meal-planner-form'>
+        <MealPlannerForm />
+      </div>
+
     </div>
+
+
+
   );
 }
 
