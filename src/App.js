@@ -44,33 +44,32 @@ function App() {
         </div>
       </div>
 
+      <div className="timeline">
 
+      </div>
 
 
       <div className="wavy-line-break" id='break2'>
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
         </svg>
-      </div>
-
-
-      <div className="scroll-down">
+      </div><div className="scroll-down">
         <h2>Ready to get started?</h2>
         {/* button that scrolls down when clicked */}
         <button onClick={() => window.scrollTo({ top: 1000, behavior: 'smooth' })}>
           &#8595;
         </button>
-      </div>
-
-
-      <div className='meal-planner-form'>
+      </div><div className='meal-planner-form'>
         <MealPlannerForm />
-      </div>
-    </div>
+      </div><footer>
+        <h2>About</h2>
+        <p>
+          Green Apron is a meal planning service that is affordable for everyone, and sustainable for the earth. It was ideated, designed, and developed by a team of 4 students at Cornell for the Digital Ag Hackathon in 2023. Built on React JS with love.
+        </p>
+      </footer>
+
+    </div >
   );
 }
-
-
-// Wegmans.com 
 
 export default App;
