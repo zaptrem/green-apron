@@ -97,7 +97,7 @@ function App() {
       <footer>
         <p>
           Made with <span role="img" aria-label="heart">❤️</span> by
-          Gabriella Best, Ming DeMers, Ryan Tremblay, and Danish, for Cornell's Digital Ag Hackathon</p>
+          Gabriella, Ming, Armita, Ryan, and Danish, for Cornell's Digital Ag Hackathon</p>
         <em>
           <p>Developed in Node JS with the OpenAI API.</p>
         </em>
