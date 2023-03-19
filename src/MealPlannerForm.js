@@ -17,7 +17,7 @@ function useFormInput(initialValue) {
 // The form component
 function MealPlannerForm(props) {
   // Form inputs
-  const people = useFormInput(1); // Number of people
+  const people = useFormInput(4); // Number of people
   const diet = useFormInput(""); // Dietary restrictions
   const mood = useFormInput(""); // Preferences
   const budget = useFormInput(0); // Budget

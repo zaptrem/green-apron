@@ -4,8 +4,13 @@ import affordable from './images/Dollar_Sign.png';
 import sustainable from './images/sustainable.png';
 import './App.css';
 import MealPlannerForm from './NewMealPlannerForm';
+import React, { useState } from 'react';
+import ChatGPT from './ChatGPT';
+import FoodList from './NewFoodList';
+import FakeLoader from './FakeLoader';
 
 function App() {
+  const [foodList, setFoodList] = useState(false);
   return (
     <div className="app">
       <header className="App-header">
@@ -59,16 +64,13 @@ function App() {
         <button onClick={() => window.scrollTo({ top: 1000, behavior: 'smooth' })}>
           &#8595;
         </button>
-      </div><div className='meal-planner-form'>
-        <MealPlannerForm />
-      </div><footer>
-        <h2>About</h2>
-        <p>
-          Green Apron is a meal planning service that is affordable for everyone, and sustainable for the earth. It was ideated, designed, and developed by a team of 4 students at Cornell for the Digital Ag Hackathon in 2023. Built on React JS with love.
-        </p>
-      </footer>
+      </div>
 
-    </div >
+
+      <div className='meal-planner-form'>
+        <MealPlannerForm />
+      </div>
+    </div>
   );
 }
 
