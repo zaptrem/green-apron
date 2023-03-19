@@ -44,7 +44,7 @@ function MealPlannerForm(props) {
       </div>
       <div>
         <label htmlFor="diet">Do you have any dietary restrictions?</label>
-        <input id="diet" type="text" placeholder="e.g. vegan, gluten-free" {...diet} />
+        <input id="diet" type="text" placeholder="e.g. I'm vegan, gluten-free and don't like..." {...diet} />
       </div>
       <div>
         <label htmlFor="mood">What are you in the mood for today?</label>
