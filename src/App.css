@@ -10,25 +10,31 @@
 }
 
 .App-header {
-  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  height: 40vmin;
+
 }
 
-.App-logo {
-  height: 40vmin;
+.logo {
   pointer-events: none;
   display: flex;
   flex-direction: row;
 }
 
+.logo img {
+  margin-right: 35px;
+  width: 150px;
+  height: 150px;
+}
+
+
 .App-header em {
   color: #339C02;
-
 }
 
 .wavy-line-break {
@@ -69,8 +75,6 @@
   fill: #FFFFFF;
 }
 
-
-
 .benefitsGrid {
   display: flex;
   flex-direction: row;
@@ -86,6 +90,11 @@
   background-color: white;
 }
 
+.benefitsGridItem img {
+  width: 35px;
+  height: 35px;
+}
+
 .meal-planner-form {
   display: flex;
   flex-direction: column;
@@ -97,6 +106,32 @@
 
 }
 
-.App-link {
-  color: #61dafb;
+.scroll-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #236E00;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding-bottom: 16px;
+  margin-bottom: calc(5vh);
+}
+
+.scroll-down button {
+  font-size: 30px;
+  background-color: #236E00;
+  border: none;
+  color: white;
+  cursor: pointer;
+
+}
+
+.scroll-down button:hover {
+  background-color: #FFFFFF;
+  color: #236E00;
+  border: #FFFFFF 1px solid;
+  border-radius: 10%;
+  padding: 5px;
 }
