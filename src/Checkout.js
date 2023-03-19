@@ -130,7 +130,7 @@ const Checkout = ({ items }) => {
   const totalPrice = items.reduce((sum, item) => sum + item.price, 0);
 
   // Calculate the discounted price by multiplying the total price by 0.5
-  const discountedPrice = totalPrice * 0.5;
+  const discountedPrice = (totalPrice * 0.59).toFixed(2);
 
   // Define a custom style object for the button
   const buttonStyle = {
@@ -157,6 +157,12 @@ const Checkout = ({ items }) => {
     fontSize: "24px", // Change the font size to 24px
     fontWeight: "bold", // Make the text bold
   };
+
+  const recipeStyle = {
+    margin: "58px",
+    padding: "60px",
+  };
+
   return (
     <div
       style={{
@@ -166,17 +172,17 @@ const Checkout = ({ items }) => {
         flexDirection: "column",
       }}
     >
-      {/* Apply the custom style object to the original price text */}
-      <p style={originalPriceStyle}>Total Price: ${totalPrice}</p>
-      {/* Apply the custom style object to the discounted price text */}
-      <p style={discountedPriceStyle}>Discounted Price: ${discountedPrice}</p>
-      {/* Apply the custom style object to the button */}
-      <Button variant="primary" size="lg" style={buttonStyle}>
-        Checkout
-      </Button>
       {/* Div with 500 pts of margin at the top */}
-      <FakeLoader>
+      <FakeLoader style={recipeStyle}>
         <Recipe />
+        {/* Apply the custom style object to the original price text */}
+        <p style={originalPriceStyle}>Total Price: ${totalPrice}</p>
+        {/* Apply the custom style object to the discounted price text */}
+        <p style={discountedPriceStyle}>Discounted Price: ${discountedPrice}</p>
+        {/* Apply the custom style object to the button */}
+        <Button variant="primary" size="lg" style={buttonStyle}>
+          Checkout
+        </Button>
       </FakeLoader>
     </div>
   );
