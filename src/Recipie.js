@@ -1,4 +1,6 @@
 import React from 'react';
+import logo from './images/AgHacksLogo.png';
+
 
 function Recipe() {
   // Define an array of steps for the recipe
@@ -13,20 +15,38 @@ function Recipe() {
 
   // Define an inline style object for font size
   const style = {
-    fontSize: '16pt'
+
+    fontSize: '16pt',
+    boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+    margin: '20px',
+    padding: '20px',
+    marginTop: '50px',
+    fontSize: '14pt',
+  };
+
+  const imgSize = {
+    width: '100px',
+    height: '100px',
+    objectFit: 'cover',
+    borderRadius: '10px',
+    display: 'flex',
+    margin: 'auto',
   };
 
   // Return JSX elements using map function
   return (
-    <div>
-      <h4>Spaghetti Bolognese</h4>
-      <ul>
+    <div style={style}>
+      <>
+        <img src={logo} className="App-logo" alt="logo" style={imgSize} />
+      </>
+      <h2>Spaghetti Bolognese</h2>
+      <ol>
         {steps.map((step, index) => (
-          <li key={index} style={style}>{step}</li>
+          <li key={index} >{step}</li>
         ))}
-      </ul>
+      </ol>
     </div>
-    
+
   );
 }
 

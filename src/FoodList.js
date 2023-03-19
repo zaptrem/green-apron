@@ -38,9 +38,10 @@ const MealItem = ({ meal }) => {
     <div
       style={{
         display: "flex",
+        flexDirection: "column",
         alignItems: "center",
-        margin: "10px",
-        padding: showMore ? "20px" : "10px",
+        margin: "30px",
+        padding: '50px',
         borderRadius: showMore ? "20px" : "10px",
         boxShadow: showMore
           ? `0 8px 16px rgba(0,0,0,0.2), inset 0 -8px 16px rgba(255,255,255,0.1)`
@@ -54,16 +55,18 @@ const MealItem = ({ meal }) => {
         width: '100px',
         height: '100px',
         objectFit: 'cover',
-        borderRadius: '10px'
+        borderRadius: '10px',
       }} />
       <div
         style={{
           marginLeft: "20px",
+          display: "flex",
+          flexDirection: "column",
         }}
       >
         <h3
           style={{
-            margin: "0",
+            margin: "15px",
             fontSize: "18px",
           }}
         >
@@ -71,7 +74,7 @@ const MealItem = ({ meal }) => {
         </h3>
         <p
           style={{
-            margin: "0",
+            margin: "15px",
             fontSize: "14px",
           }}
         >
@@ -98,6 +101,8 @@ const MealList = () => {
     <div
       style={{
         width: "400px",
+        margin: "50px",
+        padding: "20px",
       }}
     >
       {meals.map((meal) => (

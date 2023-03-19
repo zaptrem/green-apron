@@ -91,7 +91,6 @@ function App() {
       <div className='meal-planner-form'>
         <h2>Ready to Give it a Try?</h2>
         {foodList ? <FakeLoader><FoodList /></FakeLoader> : <MealPlannerForm onSubmit={() => setFoodList(true)} />}
-
       </div>
 
       <footer>
