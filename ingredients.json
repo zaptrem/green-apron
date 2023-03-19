@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Olive oil",
+        "price": 3,
+        "quantity": 2,
+        "store": "Walmart"
+    },
+    {
+        "title": "Beef mince",
+        "price": 8,
+        "quantity": 1,
+        "store": "Wegmans"
+    },
+    {
+        "title": "Onion",
+        "price": 0.5,
+        "quantity": 1,
+        "store": "Trader Joe's"
+    },
+    {
+        "title": "Garlic",
+        "price": 0.75,
+        "quantity": 2,
+        "store": "Trader Joe's"
+    },
+    {
+        "title": "Carrot",
+        "price": 0.25,
+        "quantity": 1,
+        "store": "Walmart"
+    },
+    {
+        "title": "Mushroom",
+        "price": 2,
+        "quantity": 1,
+        "store": "Wegmans"
+    },
+    {
+        "title": "Chopped tomatoes",
+        "price": 1.5,
+        "quantity": 2,
+        "store": "Trader Joe's"
+    },
+    {
+        "title": "Beef stock cube",
+        "price": 0.75,
+        "quantity": 1,
+        "store": "Walmart"
+    },
+    {
+        "title": "Tomato ketchup or purée",
+        "price": 2,
+        "quantity": 1,
+        "store": "Wegmans"
+    },
+    {
+        "title": "Worcestershire sauce",
+        "price": 3,
+        "quantity": 1,
+        "store": "Trader Joe's"
+    },
+    {
+        "title": "Spaghetti",
+        "price": 1.5,
+        "quantity": 1,
+        "store": "Walmart"
+    },
+    {
+        "title": "Cheese (optional)",
+        "price": 4,
+        "quantity": 1,
+        "store": "Wegmans"
+    }
+]

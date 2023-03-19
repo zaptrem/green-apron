@@ -4,8 +4,13 @@ import affordable from './images/Dollar_Sign.png';
 import sustainable from './images/sustainable.png';
 import './App.css';
 import MealPlannerForm from './NewMealPlannerForm';
+import React, { useState } from 'react';
+import ChatGPT from './ChatGPT';
+import FoodList from './NewFoodList';
+import FakeLoader from './FakeLoader';
 
 function App() {
+  const [foodList, setFoodList] = useState(false);
   return (
     <div className="app">
       <header className="App-header">
@@ -60,11 +65,12 @@ function App() {
         <button onClick={() => window.scrollTo({ top: 1000, behavior: 'smooth' })}>
           &#8595;
         </button>
+        
       </div>
 
 
       <div className='meal-planner-form'>
-        <MealPlannerForm />
+      {foodList ? <FakeLoader><FoodList /></FakeLoader> : <MealPlannerForm onSubmit={() => setFoodList(true)} />}
       </div>
     </div>
   );

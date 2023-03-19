@@ -1,0 +1,140 @@
+[
+    {
+        "name": "Bananas",
+        "price": 0.59,
+        "home_store": "Walmart"
+    },
+    {
+        "name": "Milk",
+        "price": 3.49,
+        "home_store": "Target"
+    },
+    {
+        "name": "Eggs",
+        "price": 2.99,
+        "home_store": "Walmart"
+    },
+    {
+        "name": "Bread",
+        "price": 1.99,
+        "home_store": "Wegmans"
+    },
+    {
+        "name": "Cheese",
+        "price": 4.99,
+        "home_store": "Wegmans"
+    },
+    {
+        "name": "Yogurt",
+        "price": 2.49,
+        "home_store": "Target"
+    },
+    {
+        "name": "Apples",
+        "price": 1.29,
+        "home_store": "Trader Joe's"
+    },
+    {
+        "name": "Salmon",
+        "price": 9.99,
+        "home_store": "Whole Foods"
+    },
+    {
+        "name": "Carrots",
+        "price": 0.99,
+        "home_store": "Walmart"
+    },
+    {
+        "name": "Butter",
+        "price": 3.79,
+        "home_store": "Target"
+    },
+    {
+        "name": "Ice cream",
+        "price": 4.49,
+        "home_store": "Wegmans"
+    },
+    {
+        "name": "Orange juice",
+        "price": 2.99,
+        "home_store": "Trader Joe's"
+    },
+    {
+        "name": "Chicken breast",
+        "price": 5.99,
+        "home_store": "Whole Foods"
+    },
+    {
+        "name": "Lettuce",
+        "price": 1.49,
+        "home_store": "Walmart"
+    },
+    {
+        "name": "Ham",
+        "price": 6.49,
+        "home_store": "Target"
+    },
+    {
+        "name": "Tomatoes",
+        "price": 1.99,
+        "home_store": "Trader Joe's"
+    },
+    {
+        "name": "Beef",
+        "price": 7.99,
+        "home_store": "Whole Foods"
+    },
+    {
+        "name": "Mushrooms",
+        "price": 2.49,
+        "home_store": "Walmart"
+    },
+    {
+        "name": "Sour cream",
+        "price": 2.79,
+        "home_store": "Target"
+    },
+    {
+        "name": "Grapes",
+        "price": 3.29,
+        "home_store": "Wegmans"
+    },
+    {
+        "name": "Tofu",
+        "price": 2.99,
+        "home_store": "Trader Joe's"
+    },
+    {
+        "name": "Shrimp",
+        "price": 8.99,
+        "home_store": "Whole Foods"
+    },
+    {
+        "name": "Spinach",
+        "price": 1.99,
+        "home_store": "Walmart"
+    },
+    {
+        "name": "Bacon",
+        "price": 5.49,
+        "home_store": "Target"
+    },
+    {
+        "name": "Cake",
+        "price": 6.99,
+        "home_store": "Wegmans"
+    }
+]
+
+const getLogo = (store) => {
+    switch (store) {
+      case "Walmart":
+        return "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/1200px-Walmart_logo.svg.png";
+      case "Wegmans":
+        return "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Wegmans_Logo.svg/1200px-Wegmans_Logo.svg.png";
+      case "Trader Joes":
+        return "https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/Trader_Joe%27s_logo.svg/1200px-Trader_Joe%27s_logo.svg.png";
+      default:
+        return "";
+    }
+  };
